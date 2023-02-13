@@ -1,0 +1,56 @@
+.Avatar-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+}
+.Avatar-NomPrenom {
+	color: var(--PrimaryColor);
+	width: 93px;
+	font-size: 18px;
+	line-height: 26px;
+	display: flex;
+	align-items: flex-end;
+	text-align: right;
+	margin-right: 10px;
+	margin-top: auto;
+	margin-bottom: auto;
+}
+.Avatar-NomPrenom-Mobile {
+	display: none;
+}
+.Avatar-PicFace img {
+	width: 64px;
+	height: 64px;
+	background-color: #c4c4c4;
+	border-radius: 90%;
+	margin-top: auto;
+	margin-bottom: auto;
+}
+@media only screen and (max-width: 768px) {
+	.Avatar-NomPrenom {
+		display: none;
+	}
+	.Avatar-NomPrenom-Mobile {
+		font-size: 12px;
+		line-height: 17px;
+		display: flex;
+		color: var(--PrimaryColor);
+		align-items: flex-end;
+		text-align: right;
+		margin-right: 10px;
+		margin-top: auto;
+		margin-bottom: auto;
+	}
+	.Avatar-PicFace {
+		display: none;
+	}
+	.Avatar-PicFace-Mobile {
+		width: 32px;
+		height: 32px;
+		background-color: #c4c4c4;
+		border-radius: 90%;
+		margin-top: auto;
+		margin-bottom: auto;
+	}
+}

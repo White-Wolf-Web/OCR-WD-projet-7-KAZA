@@ -1,0 +1,256 @@
+.Location-main {
+	width: 1240px;
+	height: auto;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	justify-content: center;
+	margin-bottom: 20px;
+}
+.Location-Carrousel {
+	width: 1240px;
+	height: 415px;
+	border-radius: 25px;
+	margin-top: 25px;
+}
+.Location-Carrousel-Arrow {
+	mix-blend-mode: normal;
+	width: 96px;
+	height: 120px;
+}
+.Location-Carrousel-PageNumber {
+	font-family: "Montserrat";
+	font-style: normal;
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 26px;
+	display: flex;
+	align-items: flex-end;
+	text-align: center;
+	color: #ffffff;
+}
+.titre-PicFace {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 24px;
+}
+.Location-main h1,
+.Location-main h2 {
+	font-family: "Montserrat";
+	font-style: normal;
+	font-weight: 500;
+	display: flex;
+	align-items: flex-end;
+	color: var(--PrimaryColor);
+}
+.Location-main h1 {
+	font-size: 36px;
+	line-height: 64px;
+}
+.Location-main h2 {
+	font-size: 18px;
+	line-height: 26px;
+	margin-bottom: 17px;
+}
+
+
+.Location-Content {
+	height: 101px;
+	width: 1240px;
+}
+.Location-Host {
+	width: 64px;
+	height: 64px;
+	background-color: rgba(196, 196, 196, 1);
+}
+.Location-Rate {
+	width: 196px;
+	height: 36px;
+	display: flex;
+}
+.Location-Star-Rate {
+	width: 36px;
+	height: 36px;
+}
+.Location-Tag {
+	width: 115px;
+	height: 25px;
+	background: var(--PrimaryColor);
+	border-radius: 10px;
+	margin-right: 10px;
+}
+.Location-Tag h4 {
+	font-family: "Montserrat";
+	font-style: normal;
+	font-weight: 500;
+	text-align: center;
+	font-size: 14px;
+	line-height: 25px;
+	color: #ffffff;
+}
+.Location-dropdown-full {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.Location-dropdown-close {
+	width: 582px;
+	height: 52px;
+	background: var(--PrimaryColor);
+	border-radius: 10px;
+	margin-top: 24px;
+	position: relative;
+	z-index: 2;
+	justify-content: space-between;
+}
+.Location-dropdown-close h3 {
+	font-size: 18px;
+	line-height: 52px;
+	display: flex;
+	align-items: center;
+	color: #ffffff;
+	margin-left: 20px;
+}
+.Location-dropdown-Arrow-Up {
+	width: 32px;
+	height: 32px;
+	margin-top: auto;
+	margin-bottom: auto;
+	margin-right: 9px;
+	transition: all ease-in-out 0.4s;
+}
+.Location-Arrow-Down {
+	margin-top: auto;
+	margin-bottom: auto;
+	margin-right: 9px;
+	transition: all 0.4s ease-in-out;
+}
+
+.Location-dropdown-open {
+	width: 582px;
+	height: 249px;
+	border-radius: 10px;
+	background-color: #f7f7f7;
+	position: relative;
+	bottom: 10px;
+	z-index: -1;
+	padding: 40px 12px 53px 20px;
+}
+
+.Location-dropdown-open p {
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 26px;
+	color: var(--PrimaryColor);
+}
+.Location-DropDown-space-between {
+	display: flex;
+	justify-content: space-between;
+}
+.flex-center {
+	display: flex;
+	justify-content: center;
+}
+.flex {
+	display: flex;
+}
+.Location-Host-Li {
+	list-style-type: none;
+}
+button {
+	background-color: transparent;
+	width: 32px;
+	height: 32px;
+	border: transparent;
+	margin-top: auto;
+	margin-bottom: auto;
+}
+.Stars-Name-Pic {
+	display: none;
+}
+@keyframes spinner {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(180deg);
+	}
+}
+@keyframes greenCheck {
+	0% {
+		transform: rotateZ(0deg);
+	}
+	100% {
+		transform: rotateZ(180deg);
+	}
+}
+
+@media only screen and (max-width: 1239px) {
+	.Location-main {
+		width: 90%;
+	}
+	.Location-Carrousel {
+		width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+@media only screen and (max-width: 768px) {
+	.Location-Carrousel {
+		margin-top: 30px;
+		height: auto;
+	}
+	.Location-Tag {
+		width: 84px;
+		height: 18px;
+		border-radius: 5px;
+	}
+	.Location-main h1 {
+		font-size: 18px;
+		line-height: 26px;
+	}
+	.Location-main h2 {
+		font-size: 14px;
+		line-height: 20px;
+	}
+	.Location-Tag h4 {
+		font-size: 10px;
+		line-height: 14px;
+	}
+	.Stars-Name-Pic {
+		width: 100%;
+		height: 35px;
+		display: flex;
+		justify-content: space-between;
+		margin-top: 18px;
+	}
+	.Location-Avatar-container {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+		align-items: center;
+		width: 135px;
+	}
+	
+	.Location-Rate {
+		display: none;
+	}
+	.Location-Rate-Mobile {
+		width: 98px;
+		height: 18px;
+		margin-top: auto;
+		margin-bottom: auto;
+	}
+	.Location-DropDown-space-between {
+display: block;
+
+
+	}
+
+}
+
+@media only screen and (max-width: 500px) {
+	.Location-Carrousel {
+		margin-top: 31px;
+	}
+}

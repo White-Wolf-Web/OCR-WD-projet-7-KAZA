@@ -1,0 +1,11 @@
+
+.starRating img {
+    width: 25px;
+    height: 25px;
+}
+@media only screen and (max-width: 768px) {
+    .starRating img {
+        width: 15px;
+        height: 15px;
+    }
+}

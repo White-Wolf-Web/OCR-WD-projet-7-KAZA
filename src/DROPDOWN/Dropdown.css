@@ -1,0 +1,153 @@
+/********* DROPDOWN **********/
+.mini-Dropdown {
+	width: 582px;
+	height: auto;
+	margin-top: 24px;
+	border-radius: 10px;
+}
+.large-Dropdown {
+	width: 1023px;
+	height: auto;
+	border-radius: 5px;
+	margin-bottom: 31px;
+	margin-left: auto;
+	margin-right: auto;
+}
+/********* PARTIE SUPERIEUR DU DROPDOWN **********/
+.mini-Dropdown-visible, .large-Dropdown-visible {
+	background: var(--PrimaryColor);
+	color: white;
+	justify-content: space-between;
+	cursor: pointer;
+	align-items: center;
+	display: flex;
+	align-items: center;
+	border-radius: 10px;
+	position: relative;
+	z-index: 2;
+}
+.mini-Dropdown-visible {
+	height: 52px;
+}
+.large-Dropdown-visible {
+	height: 47px;
+}
+/********* le H3 DROPDOWN **********/
+.mini-Dropdown-visible h3 {
+	font-size: 18px;
+	margin-left: 20px;
+}
+.large-Dropdown-visible h3 {
+	font-size: 24px;
+	margin-left: 18px;
+	line-height: 34px;
+}
+
+/********* LA PARTIE OUVRANTE DROPDOWN (et qui remonte)**********/
+.mini-Dropdown-toggle, .large-Dropdown-toggle  {
+	opacity: 0;
+	background-color: #f7f7f7;
+	transition: opacity 3s ease-in-out, height 2.8s 2s ease-in-out;
+	padding: 0;
+	position: relative;
+	bottom: 10px;
+	z-index: 1;
+}
+.mini-Dropdown-toggle {
+	border-radius: 10px;	
+}
+.large-Dropdown-toggle {
+	border-radius: 5px;
+}
+.mini-Dropdown-toggle-box {
+	height: auto;
+	width: auto;
+	display: block;
+}
+.mini-Dropdown-toggle-box-hidden {
+height: 0;
+transition: height 2.4s ease-in-out;
+}
+/*********LES ECRITS du DROPDOWN **********/
+.mini-Dropdown-toggle p,  .large-Dropdown-toggle-p {
+	pointer-events: none;
+	font-weight: 400;
+	color: var(--PrimaryColor);
+	margin-top: 0px;
+	text-align: left;
+}
+.mini-Dropdown-toggle p {
+	font-size: 18px;
+	line-height: 26px;
+}
+.large-Dropdown-toggle-p {
+	font-size: 24px;
+	line-height: 34px;
+
+}
+.mini-Dropdown-toggle li {
+	list-style-type: none;
+	color: var(--PrimaryColor);
+	font-size: 18px;
+	line-height: 26px;
+}
+/********* IMG DROPDOWN **********/
+.mini-Dropdown-visible img, .large-Dropdown-visible img {
+	width: 32px;
+	height: 32px;
+	margin-top: auto;
+	margin-bottom: auto;
+	margin-right: 9px;
+}
+
+/*********  QUAND LE DROPDOWN  DESCEND**********/
+.dropdown-animated {
+	opacity: 1;
+	padding: 20px;
+	transition: height 0.4s ease-in-out, opacity 0.4s 0.4s ease-in-out;
+	height: auto;
+	
+}
+/********* DROPDOWN la fleche qui tourne**********/
+.dropdown-arrow-animated {
+	transition: rotate 0.4s ease-in-out;
+	transform: rotate(180deg);
+}
+
+@media only screen and (max-width: 1100px) {
+	.large-Dropdown {
+		width: 90%;
+	}
+	.mini-Dropdown {
+		width: 45%;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	.large-Dropdown-visible h3  {
+		font-size: 13px;
+		line-height: 19px;
+	}
+	.large-Dropdown-visible img {
+		width: 18px;
+		height: 18px;
+	}
+	.mini-Dropdown {
+		min-width: 335px;
+		max-width: 582px;
+		width: 90%;
+		margin-top: 24px;
+		border-radius: 10px;
+		margin-left: auto;
+margin-right: auto;
+	}
+	.mini-Dropdown-visible h3 {
+		font-size: 13px;
+		margin-left: 18px;
+	}
+	.mini-Dropdown-visible img {
+		width: 16px;
+		height: 16px;
+	}
+}
+

@@ -1,0 +1,89 @@
+
+header {
+	width: 1240px;
+	height: 68px;
+	margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header .logo {
+	display: flex;
+    justify-content: flex-start;
+	width: 230px;
+	height: 68px;
+}
+
+nav {
+    display: flex;
+    width: 200px;
+    height: 34px;
+    justify-content: space-between;
+	
+}
+nav a {
+	font-family: "Montserrat";
+	font-style: normal;
+	font-weight: 500;
+	font-size: 24px;
+	line-height: 34px;
+	display: flex;
+	align-items: flex-end;
+	text-align: right;
+  text-decoration :none;
+  color: #ff6060;
+	
+}
+nav a:hover {
+  text-decoration-line: underline;
+}
+
+header p {
+	position: absolute;
+	left: 90.65%;
+	right: 0%;
+	top: 25%;
+	bottom: 25%;
+	font-family: "Montserrat";
+	font-style: normal;
+	font-weight: 500;
+	font-size: 24px;
+	line-height: 34px;
+	display: flex;
+	align-items: flex-end;
+	text-align: right;
+	color: #ff6060;
+	text-decoration-line: underline;
+}
+
+
+@media only screen and (max-width: 1239px) {
+	header {
+		width: 90%;
+	
+	}
+}
+@media only screen and (max-width: 500px) {
+	header {
+	padding-left: 20px;
+	padding-right: 20px;
+	margin-top: 20px;
+	}
+	nav {
+		width:120px;
+		height: 17px;
+	}
+	nav a {
+		font-size: 12px;
+		line-height: 17px;
+		text-transform:uppercase;
+	}
+	header .logo {
+		width: 145px;
+		height: 47px;
+		
+	}
+}

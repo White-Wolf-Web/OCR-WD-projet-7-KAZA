@@ -1,0 +1,50 @@
+.About-main {
+	width: 1240px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	justify-content: center;
+}
+.About-Banner {
+	width: 1240px;
+	height: 223px;
+	background-color: #f7f7f7;
+	border-radius: 25px;
+	background-image: url(../ASSETS/kalen-emsley-Bkci_8qcdvQ-unsplash\ 2.png);
+	margin-top: 44px;
+	margin-bottom: 31px;
+}
+.About-Banner-Small {
+	background-image: url(./gustavo-alves-YOXSC4zRcxw-unsplash.png);
+	width: 440px;
+	height: 223px;
+	background-color: #f7f7f7;
+	border-radius: 10px;
+	margin-top: 20px;
+	margin-bottom: 19px;
+	display: none;
+}
+
+@media only screen and (max-width: 1239px) {
+	.About-main {
+		width: 100%;
+	}
+	.About-Banner {
+		width: 90%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+@media only screen and (max-width: 470px) {
+	.About-Banner {
+		background-image: url(./gustavo-alves-YOXSC4zRcxw-unsplash.png);
+		width: 90%;
+		height: 223px;
+		background-color: #f7f7f7;
+		border-radius: 10px;
+		margin-top: 20px;
+		margin-bottom: 19px;
+		background-size: cover;
+	}
+}

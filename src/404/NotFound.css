@@ -1,0 +1,69 @@
+.NotFound-Main {
+	width: 1440px;
+	height: 796px;
+	justify-content: center;
+}
+
+.NotFound p,
+.Oups p,
+.Retour p,
+p {
+	font-family: "Montserrat";
+	font-style: normal;
+	display: block;
+	color: #ff6060;
+	text-align: center;
+}
+
+.NotFound p {
+	font-weight: 700;
+	font-size: 288px;
+	line-height: 411px;
+	align-items: center;
+	text-align: center;
+	position: relative;
+	top: 50px;
+}
+
+.NotFound-Oups p {
+	font-weight: 500;
+	font-size: 36px;
+	line-height: 51px;
+	align-items: flex-end;
+	position: relative;
+	top: 50px;
+	
+}
+
+.NotFound-BackHome p {
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 26px;
+	align-items: flex-end;
+	text-decoration-line: underline;
+	position: relative;
+	top: 200px;
+}
+@media only screen and (max-width: 1200px) {
+	.NotFound-Main   {
+		width: 100%;
+	}
+}
+@media only screen and (max-width: 768px) {
+	.NotFound p   {
+		font-size: 96px;
+line-height: 137px;
+
+	}
+	.NotFound-Oups p {
+		font-size: 18px;
+line-height: 26px;
+margin-left:15% ;
+margin-right: 15%;
+	}
+	.NotFound-BackHome p {
+		font-size: 14px;
+	line-height: 20px;
+	top: 150px;
+	}
+}

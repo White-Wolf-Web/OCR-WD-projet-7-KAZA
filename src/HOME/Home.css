@@ -1,0 +1,179 @@
+.main {
+	width: 1240px;
+	height: auto;
+	margin-top: 63px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	justify-content: center;
+}
+.banner {
+	width: 1240px;
+	height: 223px;
+	display: flex;
+	border-radius: 25px;
+	background-image: url("../ASSETS/HomeBanner.png");
+	justify-content: center;
+	mix-blend-mode: darken;
+	background-color: black;
+	background-size: cover;
+}
+.bannerBackGroundDarker {
+	position: absolute;
+	width: 1240px;
+	height: 223px;
+	background: #000000;
+	mix-blend-mode: darken;
+	opacity: 0.3;
+	border-radius: 25px;
+}
+.banner p {
+	position: relative;
+	right: 5px;
+	color: white;
+	text-align: center;
+	font-family: Montserrat;
+	vertical-align: middle;
+	font-size: 48px;
+	line-height: 223px;
+	font-weight: 500;
+}
+.filtreSombre {
+	background: url(../ASSETS/Background.png);
+	width: 1240px;
+	height: 223px;
+	position: absolute;
+	top: 171px;
+	bottom: 0;
+	left: auto;
+	right: auto;
+	border-radius: 25px;
+}
+.gallery {
+	width: 1240px;
+	height: auto;
+	background: #f7f7f7;
+	border-radius: 25px;
+	margin-top: 43px;
+	display: flex;
+	flex-wrap: wrap;
+	padding: 25px 25px 25px 15px;
+	margin-bottom: 43px;
+}
+.gallery a {
+	text-decoration: none;
+}
+
+.HomeImg {
+	background-size: cover;
+	width: 340px;
+	height: 340px;
+	border-radius: 10px;
+}
+.filtreGradient {
+	background: linear-gradient(
+		180deg,
+		rgba(255, 255, 255, 0) 0%,
+		rgba(0, 0, 0, 0.5) 100%
+	);
+}
+.thumb {
+	width: 340px;
+	height: 340px;
+	margin: 25px 25px 25px 35px;
+	border-radius: 10px;
+	background-color: rgba(255, 96, 96, 1);
+}
+.thumb img {
+	width: 100%;
+}
+.thumb-p {
+	font-family: "Montserrat";
+	font-style: normal;
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 26px;
+	display: flex;
+	text-align: left;
+	align-items: flex-end;
+	color: #ffffff;
+	margin-left: 20px;
+	position: relative;
+	top: -74px;
+	max-width: 200px;
+	text-decoration: none;
+}
+
+@media only screen and (max-width: 1239px) {
+	.main {
+		width: 100%;
+	}
+	.banner,
+	.gallery,
+	.bannerBackGroundDarker,
+	.filtreSombre {
+		width: 90%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.thumb {
+		margin: 10px auto 10px auto;
+	}
+
+	.gallery a {
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+@media only screen and (max-width: 768px) {
+	.banner p {
+		font-size: 24px;
+	}
+	.thumb,
+	.HomeImg {
+		width: 335px;
+		height: 255px;
+	}
+	.thumb {
+		margin-left: 10px;
+		margin-right: 10px;
+	}
+	.gallery {
+		padding: 15px;
+		justify-content: space-around;
+		background-color: transparent;
+		margin-top: 20px;
+	}
+}
+@media only screen and (max-width: 500px) {
+	.filtreSombre {
+		top: 150px;
+	}
+}
+@media only screen and (max-width: 376px) {
+	.main {
+		margin-top: 16px;
+	}
+	.banner {
+		width: 335px;
+		height: 111px;
+		border-radius: 10px !important;
+		background-image: url("./HomeBannerSmall.png");
+	}
+	.filtreSombre {
+		width: 335px;
+		height: 111px;
+		border-radius: 10px !important;
+		border-top-left-radius: 10px!important;
+		top: 104px;
+	}
+	.banner p {
+		right: 5px;
+		color: white;
+		text-align: center;
+		vertical-align: middle;
+		font-size: 24px;
+		line-height: 111px;
+		font-weight: 500;
+	}
+}
